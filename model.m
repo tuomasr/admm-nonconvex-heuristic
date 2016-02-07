@@ -7,10 +7,9 @@
 % Tuomas Rintamäki 2015
 % tuomas.rintamaki@aalto.fi
 %% Setup data for a sample problem
-% The model represents a n-node chain. Each of the nodes has a load and a generator.
-% Depending on the cost parameters of the generators, the nodes can import
-% from or export to neighbouring nodes.
-
+% The model represents a chain of n nodes. Each node has a load and a generator.
+% The generators can be turned on or off. The model seeks to meet the load at each node by minimizing the cost of generation.
+% Depending on the cost parameters of the generators, the nodes can import from or export to neighbouring nodes
 % Mathematically, the model solves the following problem
 % min (1/2)*x'Qx + c'x + alpha
 % s.t. Ax = b
